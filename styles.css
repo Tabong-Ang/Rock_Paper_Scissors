@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#container {
+    margin: 2rem auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+button {
+    text-align: left;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+#display {
+    text-align: center;
+    padding: 2rem;
+}
+
+#result, #score {
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
