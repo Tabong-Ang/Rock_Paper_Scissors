@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Rock Paper Scissors Game</h1>
-        <button id="instructions">Game Instructions</button>
-    </header>
-
-    <div id="container">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="buttoncontainer">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
     </div>
 
-    <div id="display">
-        <div id="result">Result: </div>
-        <div id="score">Final Results: </div>
+    <div id="resultdiv">
+      <div id="result"></div>
+      <div id="winner"></div>
+      <button class="reset">Reset</button>
     </div>
-</body>
+
+    <div class="outer">
+      <div class="popup">
+        <h2>Game Instructions</h2>
+        <br />
+        <ul>
+          <li>Make a choice by clicking any of the buttons</li>
+          <li>Paper > Rock > Scissors</li>
+          <li>Scissors > Paper > Rock</li>
+          <li>Game ends if any side wins five times</li>
+        </ul>
+        <input type="button" id="closebtn" class="btt" value="Close" />
+      </div>
+      <input type="button" id="showbtn" class="btt" value="How to play" />
+    </div>
+  </body>
 </html>
